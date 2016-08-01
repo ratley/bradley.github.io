@@ -1,7 +1,17 @@
+.bethesda-pic {
+	width: 70%;
+	margin-left: 160px;
+}
+
 table {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
+	margin-left: 125px
+}
+
+table, th, td {
+	border: 2px solid
 }
 /*
 div#awards {
@@ -33,7 +43,8 @@ main {
 p {
 	font-family: 'Harmattan', sans-serif;
 	font-size: 1.1em;
-	width: 500px
+	width: 500px;
+	text-align: center;
 	
 
 }
@@ -47,6 +58,11 @@ img#nuclear {
 
 #awards {
 	font-family: 'Reem Kufi', sans-serif;
+
+}
+
+.awards {
+	text-align: center
 
 }
 

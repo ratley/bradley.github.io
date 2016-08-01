@@ -1,7 +1,14 @@
 body {
 	background-color: black;
+	text-align: center
 }
 h1, p, nav   {
 	color: white;
 }
 
+a:link {color: white}
+a:visited {color: red}
+
+iframe {
+	border: none
+	}
