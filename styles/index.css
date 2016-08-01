@@ -1,0 +1,55 @@
+table {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+/*
+div#awards {
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	top: 400px; left: 440px;
+}
+*/
+
+body {
+	width: 960px;
+	margin: auto;
+	background-color: Ivory
+
+}
+
+main {
+	max-width: 500px;
+	border: 3px solid black;
+	margin-left: 250px;
+	padding: 10px;
+	background-image: url(../images/bg2.jpg);
+
+}
+
+p {
+	font-family: 'Harmattan', sans-serif;
+	font-size: 1.1em;
+	width: 500px
+	
+
+}
+
+img#nuclear {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+}
+
+#awards {
+	font-family: 'Reem Kufi', sans-serif;
+
+}
+
+@media screen and (max-width: 500px) {
+
+p, table {font-size: 2em}
+
+
