@@ -11,6 +11,8 @@ div#awards {
 	top: 400px; left: 440px;
 }
 */
+a:link {color:black;}
+a:visited {color:red;}
 
 body {
 	width: 960px;
