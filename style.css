@@ -1,22 +1,15 @@
-/*!
- * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.0.2
- * Author: Ian Lunn @IanLunn
- * Author URL: http://ianlunn.co.uk/
- * Github: https://github.com/IanLunn/Hover
-
- * Made available under a MIT License:
- * http://www.opensource.org/licenses/mit-license.php
-
- * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
- */
 
 body {
   width: 500px;
-  margin: auto;
+  /*margin: auto;*/
   text-align: center;
-  background-color: linen;
-  font-family: 'Source Code Pro', monospace;
+  background-color: white;
+  background-image:  url("bg2.png");
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Julius Sans One', monospace;
+  font-weight: bold;
 
 }
 
@@ -24,19 +17,62 @@ nav {
   font-size: 1.5em
 }
 
-div {
-  width: 500px;
-  margin: auto;
-  margin-top: 275px
+div#buttons {
+  width: 70px;
+  margin-top: 205px;
+  position: fixed;
+  margin-left: 120px;
+  font-size: .5em;
+}
+
+.container { position:fixed; padding:0 0 0 0px; }
+#sidebar {
+    z-index: -1;
+    position:fixed;
+    top:0; bottom:0; left:0;
+    width:95px;
+    background: linear-gradient(red,white,white, red);
+    opacity: .25;
+}
+
+div.profile {
+  width: 200px;
+  background-color: MistyRose;
+  border: 17px black;
+  border-left-style: groove;
+  border-radius: 19px;
+  border-bottom: 2px solid black;
+  position: fixed;
+  margin-top: 200px; margin-left: 200px;
+  font-size: .5em;
+}
+
+.construction {
+  width: 100%;
+  position: relative;;
+  /*text-align: center;*/
+  left: 160px;
+  top: 301px;
+  font-size: 1.3em;
+  -webkit-transform: rotate(90deg);
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
 
 }
 
-a:visited {
-  color:wheat;
-  text-decoration: none
+img#profile-image {
+  width: 100%;
+  /*margin-top: 1px*/
 }
 
-a {
+
+a.out:visited {
+  /*color:wheat;*/
+  text-decoration: none;
+  border: 0
+}
+
+a.out {
   color:wheat;
   text-decoration: none;
 }
@@ -44,6 +80,43 @@ a {
 p {
   font-size: 2em
 }
+
+a#projects {
+  font-size: 1em;
+  width: 495px;
+  margin-right: 6px;
+  color: black;
+  font-family: 'Lobster', cursive;
+}
+
+a#projects:visited {
+  color: black
+}
+
+div.projects {
+  display: inline;
+  width: 200px;
+  font-size: .6em;
+  /*border: px solid black*/
+  /*text-align: inherit;*/
+}
+
+
+div.main {
+  position: absolute;
+  /*z-index: -2;*/
+  width: 700px;
+  margin-left: 500px;
+  margin-top: 195px;
+  text-align: center;
+  border: 10px solid black;
+  padding: 10px;
+  /*overflow: scroll;*/
+  /*max-height: 500px;*/
+  /*background: linear-gradient(MistyRose, white);*/
+}
+
+
 
 @-webkit-keyframes hvr-pulse {
   25% {
@@ -89,3 +162,41 @@ p {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+/* Glow */
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+
+  /* Grow */
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
