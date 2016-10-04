@@ -1,21 +1,21 @@
-body {
-  background-color: Gainsboro
+html,body {
+  background-color: Gainsboro;
+  font-size: 1.4em;
+  background: -webkit-linear-gradient(Gainsboro,wheat);
+  height: 100%
 }
 
+
 .vcenter {
-  /*width: 200px;*/
-  /*position: fixed;*/
   margin-top: 325px;
-  /*vertical-align: te*/
 }
 
 .contact {
-  font-family: Cinzel, monospace;
+  font-family: Space Mono, monospace;
+  font-size: 2em;
 }
 
 .button {
-  display: inline-block;
-  /*float: left;*/
   width: 100px;
 }
 
