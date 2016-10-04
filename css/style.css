@@ -1,7 +1,7 @@
 html,body {
   background-color: Gainsboro;
   font-size: 1.4em;
-  background: -webkit-linear-gradient(Gainsboro,wheat);
+  /*background: -webkit-linear-gradient(Gainsboro,wheat);*/
   height: 100%
 }
 
