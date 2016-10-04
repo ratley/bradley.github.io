@@ -29,7 +29,6 @@ html,body {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    html,body { max-height: 75% !important}
     .contact { font-size: 4.5em !important}
     .button { width: 200px}
     .outer { width: 600px}
