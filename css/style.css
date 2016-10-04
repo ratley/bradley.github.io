@@ -1,0 +1,21 @@
+.vcenter {
+  /*width: 200px;*/
+  /*position: fixed;*/
+  margin-top: 325px;
+  /*vertical-align: te*/
+}
+
+.contact {
+  font-family: Cinzel, monospace;
+}
+
+.button {
+  display: inline-block;
+  /*float: left;*/
+  width: 100px;
+}
+
+.outer {
+  width: 300px;
+  margin: auto;
+}
