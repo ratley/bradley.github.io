@@ -1,6 +1,6 @@
 html,body {
   background-color: Gainsboro;
-  font-size: 1.7em;
+  font-size: 1.4em;
   background: -webkit-linear-gradient(Gainsboro,wheat);
   height: 100%
 }
@@ -11,7 +11,7 @@ html,body {
 }
 
 .contact {
-  font-family: Cinzel, monospace;
+  font-family: Space Mono, monospace;
   font-size: 2em;
 }
 
