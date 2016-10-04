@@ -2,6 +2,9 @@ html,body {
   background-color: Gainsboro;
   font-size: 1.4em;
   background: -webkit-linear-gradient(Gainsboro,wheat);
+  background: -o-linear-gradient(Gainsboro,wheat);
+  background: -moz-linear-gradient(Gainsboro,wheat);
+  background: linear-gradient(Gainsboro,wheat);
   height: 100%
 }
 
