@@ -25,7 +25,7 @@ html,body {
   margin: auto;
 }
 
-@media only screen
+/*@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -33,7 +33,7 @@ html,body {
     .contact { font-size: 4.5em }
     .button { width: 200px}
     .outer { width: 600px}
-}
+}*/
 .no-text-dec {
   text-decoration: none !important
 }
