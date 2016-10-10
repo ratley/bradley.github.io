@@ -7,21 +7,19 @@ html,body {
   background: linear-gradient(Gainsboro,wheat);
   height: 100%
 }
-
-
 .vcenter {
-  margin-top: 325px;
+  margin-top: 250px !important;
 }
-
 .contact {
   font-family: Space Mono, monospace;
   font-size: 2em;
+  /*width: 500px;*/
+  margin: auto;
+  color: black;
 }
-
 .button {
-  width: 100px;
+  width: 70px !important;
 }
-
 .outer {
   width: 300px;
   margin: auto;
@@ -36,7 +34,9 @@ html,body {
     .button { width: 200px}
     .outer { width: 600px}
 }
-
+.no-text-dec {
+  text-decoration: none !important
+}
 /*@media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
