@@ -149,15 +149,27 @@ footer {
   display: hidden
 }
 
-/*@media only screen
+@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    .contact { font-size: 4.5em }
-    .button { width: 200px}
-    .outer { width: 600px}
-}*/
+    #bio {
+      font-size: .6em
+    }
+    #nav {
+      padding-left: 30px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 10px
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      margin-top: 10px !important
+    }
+}
 .no-text-dec {
   text-decoration: none !important
 }
