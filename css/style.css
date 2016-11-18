@@ -148,33 +148,90 @@ footer {
 .hidden {
   display: hidden
 }
-
+.no-text-dec {
+  text-decoration: none !important
+}
+/*5*/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (-webkit-min-device-pixel-ratio: 2) {
     #bio {
-      font-size: .6em
+      font-size: .65em
     }
     #nav {
-      padding-left: 30px;
+      padding-left: 26px;
     }
     #nav li {
-      padding: 40px 0px 15px 10px
+      padding: 40px 0px 15px 20px
     }
     #name {
       margin-top: 15px !important
     }
     #buttons {
-      margin-top: 10px !important
+      margin-top: 8px !important
     }
 }
-.no-text-dec {
-  text-decoration: none !important
+/*6*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #bio {
+      font-size: .85em
+    }
+    #nav {
+      padding-left: 35px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      margin-top: 15px !important
+    }
 }
-/*@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-}*/
+/*6+*/
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #bio {
+      font-size: 1em
+    }
+    #nav {
+      padding-left: 35px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      margin-top: 15px !important
+    }
+}
+/*galaxy s5*/
+@media screen
+  /*and (device-width: 360px)*/
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    #bio {
+      font-size: .8em
+    }
+    #nav {
+      padding-left: 35px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      margin-top: 15px !important
+    }
+}
