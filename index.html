@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>bradley inniss</title>
-  <link href="https://fonts.googleapis.com/css?family=Cinzel|Space+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Space+Mono|Roboto|Roboto+Slab|Lora|Noto+Sans" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
   <link rel="stylesheet" href="css/style.css">
@@ -12,34 +12,72 @@
   <link rel="stylesheet" href="css/animate.css-master/animate.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <meta name="keywords" content="bradley, inniss, wed, developer, full, stack, developer">
+  <script src="https://use.fontawesome.com/83561660c5.js"></script>
+  <script src="js/app.js"></script>
+  <meta name="keywords" content="bradley, inniss, full-stack, front-end, developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
-        <h1 class="animated pulse infinite contact text-center vcenter">contact me</h1>
+  <ul id="nav">
+    <li id="about-link"><a href="#about">about</a>
+      <div id="aboutBorderBottom"></div>
+    </li>
+    <li id="projects-link"><a href="#projects">projects - under construction</a>
+      <div id="projectsBorderBottom"></div>
+    </li>
+  </ul>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
+          <h1 id="name" class=" vcenter"><span>bradley inniss</span></h1>
+          <!-- <p id="desc" class="text-center">front-end | ux/ui</p> -->
+          <p id="bio" class="contact ">Junior developer shaped by a combination of my completion of <br><span>Dev Bootcamp</span> and years of self-teaching. I’m passionate about having a hand in the design and creation of the next generation’s online experience.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- <a href="#projects"><i id="down" class="fa fa-angle-down" aria-hidden="true"></i></a>
+    <div id="about-footer"></div> -->
+    <!-- <div class="text-center" id="get-in-touch">
+
+    </div> -->
+  </section>
+
+  <!-- <section id="projects">
+  </section> -->
+  <!-- <a name='projects'></a> -->
+  <footer>
+    <div style="margin-right: 0" class="row">
+      <div style="margin-top: 15px"class="text-center">
+        <a class="no-text-dec button-info" href="http://github.com/ratley" target="_blank">
+          <!-- <img class="button" src="images/github.png" alt="github" /> -->
+          <!-- github -->
+          <i style="font-size: 1.5em" class="fa fa-github-alt" aria-hidden="true"></i>
+
+        </a>
+        <a class="no-text-dec button-info" href="http://linkedin.com/in/bradleyinniss" target="_blank">
+          <i style="font-size: 1.5em" class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="no-text-dec button-info" href="mailto:bfinniss@gmail.com">
+          <!-- <img class="button" src="images/email.png" alt="email" /> -->
+          <!-- email -->
+          <i style="font-size: 1.4em" class="fa fa-envelope" aria-hidden="true"></i>
+
+        </a>
+        <a class="no-text-dec button-info" href="http://twitter.com/bralleydev" target="_blank">
+          <!-- <img class="button" src="images/twitter.png" alt="twitter" /> -->
+          <!-- twitter -->
+          <i style="font-size: 1.5em" class="fa fa-twitter" aria-hidden="true"></i>
+
+        </a>
+
+        <!-- USE FONTAWESOME ICONS INSTEAD OF IMAGES -->
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-        <a class="no-text-dec" href="http://github.com/ratley" target="_blank">
-          <img class="button hvr-hang" src="images/github.png" alt="github" />
-        </a>
-        <a class="no-text-dec" href="mailto:bfinniss@gmail.com" target="_blank">
-          <img class="button hvr-hang" src="images/email.png" alt="email" />
-        </a>
-        <a class="no-text-dec" href="http://twitter.com/bralleydev" target="_blank">
-          <img class="button hvr-hang" src="images/twitter.png" alt="twitter" />
-        </a>
-      </div>
-    </div>
-
-  </div>
-
+  </footer>
 </body>
 
 </html>
