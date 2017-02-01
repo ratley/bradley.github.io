@@ -178,7 +178,7 @@ footer {
   text-decoration: none !important
 }
 
-@media only screen  and (max-width: 270px) {
+/*@media only screen  and (max-width: 270px) {
     #bio {
       font-size: .7em
     }
@@ -233,7 +233,7 @@ footer {
     #name {
       margin-top: 15px !important
     }
-}
+}*/
 /*galaxy s5*/
 @media screen
   /*and (device-width: 360px)*/
