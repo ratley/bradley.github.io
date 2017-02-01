@@ -239,7 +239,10 @@ footer {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     #about {
-      top: 11.5%;
+      top: 1%;
+    }
+    #nav-container {
+      display: none
     }
     #nav {
       padding-left: 26px;
@@ -268,7 +271,7 @@ footer {
       font-size: 2.2em
     }
     #about {
-      top: 11.5%;
+      top: 1%;
     }
     #nav {
       padding-left: 35px;
@@ -293,7 +296,7 @@ footer {
       font-size: 2.5em
     }
     #about {
-      top: 11.5%;
+      top: 1%;
     }
     #nav {
       padding-left: 35px;
@@ -318,7 +321,7 @@ footer {
       font-size: 2.1em
     }
     #about {
-      top: 11.5%;
+      top: 1%;
     }
     #nav {
       padding-left: 35px;
