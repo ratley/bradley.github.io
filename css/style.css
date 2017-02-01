@@ -355,3 +355,26 @@ footer {
       top: 18%;
     }
 }
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    #bio {
+      font-size: 1.7em
+    }
+    #about {
+      top: 12%;
+    }
+    #nav {
+      padding-left: 35px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      top: 7%;
+      font-size: 2em
+    }
+}
