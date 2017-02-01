@@ -355,6 +355,7 @@ footer {
       top: 18%;
     }
 }
+/*ipads*/
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
@@ -366,9 +367,16 @@ footer {
     }
     #nav {
       padding-left: 35px;
+      font-size: 1.7em;
     }
     #nav li {
       padding: 40px 0px 15px 20px
+    }
+    #nav #about-link a {
+      border-bottom: 3px solid white;
+    }
+    #aboutBorderBottom {
+      display: none
     }
     #name {
       margin-top: 15px !important
@@ -376,5 +384,36 @@ footer {
     #buttons {
       top: 7%;
       font-size: 2em
+    }
+}
+/*ipad pro*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px) {
+    #bio {
+      font-size: 2em
+    }
+    #about {
+      top: 12%;
+    }
+    #nav {
+      padding-left: 35px;
+      font-size: 1.7em;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #nav #about-link a {
+      border-bottom: 3px solid white;
+    }
+    #aboutBorderBottom {
+      display: none
+    }
+    #name {
+      margin-top: 15px !important
+    }
+    #buttons {
+      top: 8.7%;
+      font-size: 2.7em
     }
 }
