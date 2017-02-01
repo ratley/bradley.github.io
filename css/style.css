@@ -92,6 +92,13 @@ background-size: cover;
   width: 100%;
   margin: 0;
 }
+#buttons {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
 #desc {
   margin: 0
 }
@@ -283,8 +290,5 @@ footer {
     }
     #name {
       margin-top: 15px !important
-    }
-    #buttons {
-      margin-top: 8px !important
     }
 }
