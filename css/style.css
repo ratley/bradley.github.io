@@ -291,4 +291,11 @@ footer {
     #name {
       margin-top: 15px !important
     }
+    #buttons {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      right: 5%;
+      bottom: 5%;
+    }
 }
