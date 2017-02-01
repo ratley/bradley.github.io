@@ -268,7 +268,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     #bio {
-      font-size: 2.2em
+      font-size: 2em
     }
     #about {
       top: 1%;
@@ -293,7 +293,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
     #bio {
-      font-size: 2.5em
+      font-size: 2.1em
     }
     #about {
       top: 1%;
