@@ -19,19 +19,19 @@ $(document).ready(function() {
       scrollTop: $("#projects").offset().top
     }, 1000);
   })
-
-  // $('#projects-link').hover(function() {
-  //   $(this).html('under construction - <a href="http://github.com/ratley" target="_blank">github</a>')
-  //   $(this).css('transition', 'color .2s ease')
-  //   $(this).css('color', 'gold')
-  // })
-  // $(this).css('color', 'gold')
-  // $(document).on('hover','#projects-link a', function() {
-  // })
-  // $('#projects-link').on('mouseleave', function() {
-  //   $(this).text('projects')
-  //   $(this).css('color', '#616161')
-  // })
+{/* <a href="http://github.com/ratley" target="_blank">github</a> */}
+  $('#projects-link').hover(function() {
+    $(this).html('under construction')
+    $(this).css('transition', 'color .5s ease')
+    $(this).css('color', 'gold')
+  })
+  $(this).css('color', 'gold')
+  $(document).on('hover','#projects-link a', function() {
+  })
+  $('#projects-link').on('mouseleave', function() {
+    $(this).text('projects')
+    $(this).css('color', '#616161')
+  })
 
 
   checkLocation()

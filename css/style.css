@@ -1,6 +1,8 @@
 html,body {
 background-color: black;
 font-size: 1.4em;
+background: url('../images/bg1.jpg') no-repeat center center fixed;
+background-size: cover;
   /*background: -webkit-linear-gradient(Gainsboro,wheat);
   background: -o-linear-gradient(Gainsboro,wheat);
   background: -moz-linear-gradient(Gainsboro,wheat);
@@ -270,7 +272,8 @@ footer {
       font-size: .65em
     }
     #about {
-      top: 15%
+      top: 15%;
+
     }
     #nav {
       padding-left: 26px;
