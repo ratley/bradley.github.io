@@ -10,8 +10,11 @@ font-size: 1.4em;
 .vcenter {
   margin-top: 80px !important;
 }
+.button-info {
+  padding-bottom: 0 !important
+}
 #nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 65px;
@@ -68,12 +71,12 @@ font-size: 1.4em;
   color: white;
   font-family: Noto Sans;
   margin-bottom: 20px;
-  margin: auto;
+  margin-right: 0;
   width: 80%;
   margin-bottom: 10px;
 }
 #name span:hover {
-  color: wheat
+  color: wheat;
 }
 #name span {
   /*border-bottom: 2px solid #bdbdbd;*/
@@ -84,6 +87,8 @@ font-size: 1.4em;
   line-height: 1.2;
   border-left: 10px solid Salmon;
   padding-left: 10px;
+  width: 100%;
+  margin: 0;
 }
 #desc {
   margin: 0
@@ -100,7 +105,9 @@ font-size: 1.4em;
   cursor: pointer;
 }
 #about {
-  height: 90vh;
+  position: relative;
+  top: 10%;
+  height: 60vh;
 }
 #get-in-touch {
   margin-top: 140px;
@@ -111,14 +118,24 @@ font-size: 1.4em;
 #projects {
   height: 90vh;
   width: 100vw;
-  background-color: wheat;
+  background-color: #212121;
   /*background-image: url(data:image/png;base64,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);*/
   /*background-image: url('../images/bg1.jpg');
   background-attachment: fixed;*/
-
+}
+#projects-list {
+  font-size: .5em;
+  list-style: none
+}
+#projects-list li {
+  font-family: Noto Sans;
+  float: left;
+}
+#projects-list li h1 {
+  font-size: 1.4em
 }
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100vw;
   height: 10vh;
@@ -151,13 +168,10 @@ footer {
 .no-text-dec {
   text-decoration: none !important
 }
-/*5*/
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+
+@media only screen  and (max-width: 270px) {
     #bio {
-      font-size: .65em
+      font-size: .7em
     }
     #nav {
       padding-left: 26px;
@@ -168,20 +182,13 @@ footer {
     #name {
       margin-top: 15px !important
     }
-    #buttons {
-      margin-top: 8px !important
-    }
 }
-/*6*/
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen  and (max-width: 370px) {
     #bio {
-      font-size: .85em
+      font-size: .8em
     }
     #nav {
-      padding-left: 35px;
+      padding-left: 26px;
     }
     #nav li {
       padding: 40px 0px 15px 20px
@@ -189,20 +196,13 @@ footer {
     #name {
       margin-top: 15px !important
     }
-    #buttons {
-      margin-top: 15px !important
-    }
 }
-/*6+*/
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen  and (max-width: 625px) {
     #bio {
       font-size: 1em
     }
     #nav {
-      padding-left: 35px;
+      padding-left: 26px;
     }
     #nav li {
       padding: 40px 0px 15px 20px
@@ -210,7 +210,18 @@ footer {
     #name {
       margin-top: 15px !important
     }
-    #buttons {
+}
+@media only screen  and (max-width: 990px) {
+    #bio {
+      font-size: 1.3em
+    }
+    #nav {
+      padding-left: 26px;
+    }
+    #nav li {
+      padding: 40px 0px 15px 20px
+    }
+    #name {
       margin-top: 15px !important
     }
 }
@@ -231,33 +242,17 @@ footer {
     #name {
       margin-top: 15px !important
     }
-    #buttons {
-      margin-top: 15px !important
-    }
 }
-@media only screen  and (max-width: 990px) {
-    #bio {
-      font-size: 1.3em
-    }
-    #nav {
-      padding-left: 26px;
-    }
-    #nav li {
-      padding: 40px 0px 15px 20px
-    }
-    #name {
-      margin-top: 15px !important
-    }
-    #buttons {
-      margin-top: 15px !important
-    }
-}
-@media only screen  and (max-width: 625px) {
+/*6+*/
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
     #bio {
       font-size: 1em
     }
     #nav {
-      padding-left: 26px;
+      padding-left: 35px;
     }
     #nav li {
       padding: 40px 0px 15px 20px
@@ -265,13 +260,17 @@ footer {
     #name {
       margin-top: 15px !important
     }
-    #buttons {
-      margin-top: 15px !important
-    }
 }
-@media only screen  and (max-width: 370px) {
+/*5*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     #bio {
-      font-size: .8em
+      font-size: .65em
+    }
+    #about {
+      top: 15%
     }
     #nav {
       padding-left: 26px;
@@ -283,23 +282,6 @@ footer {
       margin-top: 15px !important
     }
     #buttons {
-      margin-top: 15px !important
-    }
-}
-@media only screen  and (max-width: 270px) {
-    #bio {
-      font-size: .7em
-    }
-    #nav {
-      padding-left: 26px;
-    }
-    #nav li {
-      padding: 40px 0px 15px 20px
-    }
-    #name {
-      margin-top: 15px !important
-    }
-    #buttons {
-      margin-top: 15px !important
+      margin-top: 8px !important
     }
 }

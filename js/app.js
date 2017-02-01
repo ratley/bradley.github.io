@@ -20,19 +20,18 @@ $(document).ready(function() {
     }, 1000);
   })
 
-  $('#projects-link').hover(function() {
-    $(this).html('under construction - <a href="http://github.com/ratley" target="_blank">github</a>')
-    $(this).css('transition', 'color .2s ease')
-    $(this).css('color', 'gold')
-  })
-  $(this).css('color', 'gold')
-  $(document).on('hover','#projects-link a', function() {
-    // $(this).css('cursor', 'pointer')
-  })
-  $('#projects-link').on('mouseleave', function() {
-    $(this).text('projects')
-    $(this).css('color', '#616161')
-  })
+  // $('#projects-link').hover(function() {
+  //   $(this).html('under construction - <a href="http://github.com/ratley" target="_blank">github</a>')
+  //   $(this).css('transition', 'color .2s ease')
+  //   $(this).css('color', 'gold')
+  // })
+  // $(this).css('color', 'gold')
+  // $(document).on('hover','#projects-link a', function() {
+  // })
+  // $('#projects-link').on('mouseleave', function() {
+  //   $(this).text('projects')
+  //   $(this).css('color', '#616161')
+  // })
 
 
   checkLocation()
