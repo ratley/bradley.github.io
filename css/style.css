@@ -90,6 +90,7 @@ background-size: cover;
   padding-left: 10px;
   width: 100%;
   margin: 0;
+  font-size: 4.55vh
 }
 #buttons {
   position: absolute;
@@ -234,6 +235,11 @@ footer {
     }
 }*/
 /*5*/
+@media (min-width: 570px) {
+  .contact {
+    font-size: 2.4em
+  }
+}
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
@@ -267,9 +273,6 @@ footer {
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    #bio {
-      font-size: 2em
-    }
     #about {
       top: 1%;
     }
@@ -292,9 +295,6 @@ footer {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    #bio {
-      font-size: 2.1em
-    }
     #about {
       top: 1%;
     }
@@ -317,9 +317,6 @@ footer {
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    #bio {
-      font-size: 2.1em
-    }
     #about {
       top: 1%;
     }
@@ -340,9 +337,6 @@ footer {
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
-    #bio {
-      font-size: 3.8em
-    }
     #about {
       top: 12%;
     }
@@ -371,9 +365,6 @@ footer {
 @media only screen
   and (min-device-width: 1024px)
   and (max-device-width: 1366px) {
-    #bio {
-      font-size: 5em
-    }
     #about {
       top: 12%;
     }
