@@ -310,6 +310,9 @@ footer {
     #buttons {
       top: 25%;
     }
+    #bio {
+      font-size: 3.7vh
+    }
 }
 /*galaxy s5*/
 @media screen
@@ -388,4 +391,9 @@ footer {
       top: 12%;
       font-size: 2.7em
     }
+}
+@media (min-width: 992px) {
+  #bio {
+    font-size: 4.5vh
+  }
 }
