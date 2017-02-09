@@ -1,4 +1,7 @@
+// $.backstretch("images/bg1.jpg") {fade: normal}
+
 $(document).ready(function() {
+
 //   $(window).scroll(function (event) {
 //     var scroll = $(window).scrollTop();
 //     console.log(scroll)
@@ -39,6 +42,7 @@ $(document).ready(function() {
 
 
   checkLocation()
+
 })
 
 function isIndex() {
