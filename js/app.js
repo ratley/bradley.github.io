@@ -1,6 +1,8 @@
 // $.backstretch("images/bg1.jpg") {fade: normal}
 
 $(document).ready(function() {
+
+    // $('#projects').backstretch("images/bg1-flipped.jpg")
   $('.backstretch').css('opacity', '1')
 
 //   $(window).scroll(function (event) {
