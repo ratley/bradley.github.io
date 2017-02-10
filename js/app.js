@@ -1,6 +1,7 @@
 // $.backstretch("images/bg1.jpg") {fade: normal}
 
 $(document).ready(function() {
+  $('.backstretch').css('opacity', '1')
 
 //   $(window).scroll(function (event) {
 //     var scroll = $(window).scrollTop();
