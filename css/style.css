@@ -111,8 +111,8 @@ body > .backstretch {
 #down {
   position: absolute;
   bottom: 24%;
-  left: 49%;
-  font-size: 5em;
+  left: 48vw;
+  font-size: 5.3vw;
   color: white;
 }
 #down:hover {
@@ -136,13 +136,6 @@ body > .backstretch {
   width: 100vw;
   font-size: 2vh;
   border-top: 5px solid salmon;
-}
-img {
-width: 800px;
-height: auto;
-border: 4px solid gold;
-margin: auto;
-display: block;
 }
 #projects-list {
   font-size: .5em;
@@ -246,6 +239,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 2) {
     #about {
       top: 1%;
+      height: 90vh;
     }
     #nav-container {
       display: none
@@ -353,18 +347,21 @@ footer {
     #nav li {
       padding: 40px 0px 15px 20px
     }
-    #nav #about-link a {
-      border-bottom: 3px solid white;
-    }
-    #aboutBorderBottom {
-      display: none
-    }
     #name {
       margin-top: 15px !important
     }
     #buttons {
       top: 15%;
       font-size: 2em
+    }
+    #aboutBorderBottom, #projectsBorderBottom {
+      display: none;
+    }
+    #about-link > a {
+      border: none
+    }
+    .active {
+      border-bottom: 5px solid white !important
     }
 }
 /*ipad pro*/
@@ -381,9 +378,6 @@ footer {
     #nav li {
       padding: 40px 0px 15px 20px
     }
-    #nav #about-link a {
-      border-bottom: 3px solid white;
-    }
     #aboutBorderBottom {
       display: none
     }
@@ -394,6 +388,7 @@ footer {
       top: 12%;
       font-size: 2.7em
     }
+
 }
 @media (min-device-width: 992px) {
   #bio {

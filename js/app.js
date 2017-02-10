@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-    // $('#projects').backstretch("images/bg1-flipped.jpg")
+  // $('#projects').backstretch("images/bg1-flipped.jpg")
   $('.backstretch').css('opacity', '1')
 
 //   $(window).scroll(function (event) {
