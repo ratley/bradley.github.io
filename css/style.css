@@ -146,7 +146,7 @@ body > .backstretch {
 }
 #projects {
   position: absolute;
-  background-color: black;
+  background-color: white;
   height: 100vh;
   width: 100%;
   font-size: 2vh;
@@ -170,7 +170,7 @@ body > .backstretch {
   font-size: 1.4em
 }
 #projects-container {
-  color: white;
+  color: black;
   font-size: 3em;
   width: 100%;
   margin-left: auto;
@@ -201,6 +201,7 @@ body > .backstretch {
 #plist li {
   padding: 10px 0px 10px 0px;
   text-align: left;
+  color: black
 }
 #plist li:hover {
   cursor: pointer;
