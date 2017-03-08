@@ -1,5 +1,7 @@
+/*change background color back*/
 html,body {
-background-color: #F6F9FC;
+/*background-color: #F6F9FC;*/
+background-color: white;
   /*font-size: 1.4em;*/
   /*background: url('../images/bg1.jpg') no-repeat center fixed;*/
   /*background-size: cover;*/
@@ -150,7 +152,8 @@ body > .backstretch {
   height: 100vh;
   width: 100%;
   font-size: 2vh;
-  border-top: 5px solid #42a5f5;
+  /*box-shadow: -1px 8px 20px 7px rgba(50,50,93,.1)*/
+  /*border-top: 5px solid #42a5f5;*/
 }
 #skills {
   position: relative;
