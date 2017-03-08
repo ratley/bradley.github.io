@@ -1,5 +1,5 @@
 html,body {
-background-color: black;
+background-color: #F6F9FC;
   /*font-size: 1.4em;*/
   /*background: url('../images/bg1.jpg') no-repeat center fixed;*/
   /*background-size: cover;*/
@@ -42,14 +42,14 @@ body > .backstretch {
   text-decoration: none !important;
 }
 #aboutBorderBottom {
- border-bottom: 2px solid white;
+ border-bottom: 2px solid #42a5f5;
  position: absolute;
  bottom: 0;
  width: 38px;
  transition: width .5s ease;
 }
 #projectsBorderBottom {
- border-bottom: 2px solid white;
+ border-bottom: 2px solid #42a5f5;
  position: absolute;
  bottom: 0;
  width: 0px;
@@ -58,11 +58,11 @@ body > .backstretch {
 .active {
   /*text-decoration: underline;*/
   /*border-bottom: 3px solid white;*/
-  color: white !important
+  color: #42a5f5 !important
 }
 #nav li a:hover {
   text-decoration: none;
-  color: white
+  color: #42a5f5
 }
 #nav li a:active {
   text-decoration: none
@@ -82,21 +82,36 @@ body > .backstretch {
   width: 80%;
   margin-bottom: 10px;
 }
-#name span:hover {
-  color: wheat;
-}
 #name span {
   /*border-bottom: 2px solid #bdbdbd;*/
-  color: Salmon;
+  color: #42a5f5;
   transition: color .5s ease
 }
 #bio {
   line-height: 1.2;
-  border-left: 10px solid Salmon;
+  border-left: 10px solid #42a5f5;
   padding-left: 10px;
   width: 100%;
   margin: 0;
-  font-size: 3.5vh
+  font-size: 3.5vh;
+  color: #6B7C93;
+}
+#bio span {
+  /*border-bottom: 1px solid #42a5f5*/
+  text-decoration: underline;
+  color: #42a5f5
+}
+#bio span a {
+  transition: color .2s ease
+}
+#bio span a:visited {
+  color: #42a5f5
+}
+#bio span a:hover {
+  color: #1976d2
+}
+#skills .container h1 {
+  color: #42a5f5
 }
 #buttons {
   position: absolute;
@@ -113,7 +128,7 @@ body > .backstretch {
   bottom: 24%;
   left: 48vw;
   font-size: 5.3vw;
-  color: white;
+  color: #42a5f5;
 }
 #down:hover {
   cursor: pointer;
@@ -135,7 +150,13 @@ body > .backstretch {
   height: 100vh;
   width: 100%;
   font-size: 2vh;
-  border-top: 5px solid salmon;
+  border-top: 5px solid #42a5f5;
+}
+#skills {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  background-color: #FFFFFF
 }
 #projects-list {
   font-size: .5em;
@@ -185,7 +206,7 @@ body > .backstretch {
   cursor: pointer;
 }
 #plist a {
-  color: salmon
+  color: #42a5f5
 }
 #img-cont {
   margin-left: 15%;
@@ -198,16 +219,17 @@ footer {
   bottom: 0;
   width: 100vw;
   height: 10vh;
-  background-color: Salmon
+  background-color: #F6F9FC;
+  box-shadow: -1px 8px 20px 7px rgba(50,50,93,.1)
 }
 .button {
   width: 40px !important;
 }
 .fa {
-  transition: color .3s cubic-bezier(0.07, 0.71, 0.95, 0.65);
+  transition: color .3s ease-out;
 }
 .button-info {
-  color: black;
+  color: #424242;
   vertical-align: middle;
   font-size: 1.6em;
   font-family: Lora;
@@ -215,7 +237,7 @@ footer {
 }
 .button-info:hover {
   cursor: pointer;
-  color: white
+  color: #42a5f5
 }
 .outer {
   width: 300px;
@@ -361,7 +383,7 @@ footer {
       border: none
     }
     .active {
-      border-bottom: 5px solid white !important
+      border-bottom: 5px solid #42a5f5 !important
     }
 }
 /*ipad pro*/
