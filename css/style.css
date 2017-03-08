@@ -153,7 +153,7 @@ body > .backstretch {
   width: 100%;
   font-size: 2vh;
   /*box-shadow: -1px 8px 20px 7px rgba(50,50,93,.1)*/
-  /*border-top: 5px solid #42a5f5;*/
+  border-top: 5px solid #42a5f5;
 }
 #skills {
   position: relative;
