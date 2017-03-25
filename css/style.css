@@ -21,6 +21,10 @@ html,body {
   background-size: cover;
   background-position: 50% 50%;
 }
+.fa-codepen {
+  font-size: 1.3em !important
+}
+
 .tempx {
   margin-top: 25px;
   width: 75%;
@@ -96,7 +100,8 @@ body > .backstretch {
 }
 .container {
   position: absolute;
-  width: 100%
+  width: 100%;
+  top: 10%
 }
 #name {
   color: white;
@@ -173,8 +178,8 @@ body > .backstretch {
 }
 #about {
   position: relative;
-  top: 10%;
-  height: 100vh;
+  /*top: 10%;*/
+  height: 90vh;
 }
 #get-in-touch {
   margin-top: 140px;
