@@ -2,6 +2,28 @@
 
 $(document).ready(function() {
 
+  $('#bradley').on('click', function() {
+    $('.skills').css('color', '#bbdefb')
+    $(this).css('color', '#42a5f5')
+    $('#bio').show()
+    $('#name').css('margin-left', '0')
+    $('#bio').css('opacity', '1')
+    $('#about-header-cont').css('text-align', 'inherit')
+    $('#skill-pics').hide()
+    $('#skill-pics').css('opacity', '0')
+  })
+
+  $('.skills').on('click', function() {
+    $('#bradley').css('color', '#bbdefb')
+    $(this).css('color', '#42a5f5')
+    $('#bio').css('opacity', '0')
+    $('#bio').hide()
+    // $('#name').css('margin-left', '31.5%')
+    $('#skill-pics').show()
+    $('#skill-pics').css('opacity', '1');
+
+  })
+
   // $('#projects').backstretch("images/bg1-flipped.jpg")
   $('.backstretch').css('opacity', '1')
 

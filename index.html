@@ -13,6 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/83561660c5.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
   <script src="js/jquery.backstretch.js"></script>
 
@@ -23,9 +24,9 @@
 </head>
 
 <body>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $.backstretch("images/bg3.jpg")
-  </script>
+  </script> -->
   <div id="nav-container">
     <ul id="nav">
       <li id="about-link"><a href="#about">about</a>
@@ -38,21 +39,40 @@
   </div>
 
   <section id="about">
-    <div class="container">
-          <h1 id="name" class=" vcenter"><span>bradley inniss</span></h1>
-          <!-- <p id="desc" class="text-center">front-end | ux/ui</p> -->
-          <p id="bio" class="contact ">Front-End Developer shaped by my completion of <br><span><a href="https://devbootcamp.com/" target='_blank'>Dev Bootcamp</a></span> and years of self-teaching. I’m passionate about having a hand in the design and creation of the next generation’s online experience.</p>
-    </div>
-    <a href="#projects"><i id="down" class="fa fa-angle-down animated pulse infinite" aria-hidden="true"></i></a>
-    <!-- <div id="about-footer"></div> -->
-    <!-- <div class="text-center" id="get-in-touch">
+    <div id="particles-js">
 
-    </div> -->
+      <div class="container">
+          <!-- <h1 id="name" class=" vcenter"><span id="bradley">bradley inniss <span id="divider">•</span> </span><span class="skills">skills</span></h1> -->
+          <h1 id="name" class=" vcenter"><span id="bradley">bradley inniss</span></h1>
+            <!-- <p id="desc" class="text-center">front-end | ux/ui</p> -->
+            <p id="bio" class="contact ">Front-End Developer shaped by my completion of <span><a href="https://devbootcamp.com/" target='_blank'>Dev&nbsp;Bootcamp</a></span> and years of self-teaching. I’m passionate about having a hand in the design and creation of the next generation’s online experience.</p>
+            <!-- <div id="skill-pics">
+              <img id="jquery" src="images/jquery.png" alt="jquery">
+              <img id="html" src="images/html-js-css.png" alt="html, css, js">
+              <img id="rails" src="images/rails.png" alt="ruby on rails">
+              <div id="learning">
+                <h1></h1>
+              </div>
+            </div> -->
+      </div>
+      <a href="#projects"><i id="down" class="fa fa-angle-down animated pulse infinite" aria-hidden="true"></i></a>
+      <!-- <div id="about-footer"></div> -->
+      <!-- <div class="text-center" id="get-in-touch">
+
+      </div> -->
+    </div>
+    <script src="js/particle-js.js"></script>
+
   </section>
 
   <!-- <section id="skills">
     <div class="container">
       <h1>skills</h1>
+      <div id="skill-pics">
+        <img id="jquery" src="images/jquery.png" alt="jquery">
+        <img id="html" src="images/html-js-css.png" alt="html, css, js">
+        <img id="rails" src="images/rails.png" alt="ruby on rails">
+      </div>
     </div>
   </section> -->
 
@@ -61,12 +81,15 @@
       <h2>
         projects
       </h2>
+      <!-- <div class="tempx"> -->
+        <!-- <img src="http://i.imgur.com/wZOipZW.png" alt=""> -->
+      <!-- </div> -->
       <p style="font-size: .5em; color: #1e88e5; padding-top: 0">this section is under construction!</p>
       <p style="font-size: .5em; color: #1e88e5;margin-bottom:20px">here's a simple list of them for now(<span style="color:black">more to be added soon</span>):</p>
       <div id="plist-cont">
         <ul id="plist">
           <li>
-            <!-- url shortener -->
+
             web apps
             <ul>
               <li><a href="http://bi-urls.herokuapp.com" target="_blank">url shortener</a></li>
@@ -75,7 +98,7 @@
             </ul>
           </li>
           <li>
-            <!-- trip tip -->
+
             extensions
             <ul>
               <li>
@@ -85,7 +108,7 @@
           </li>
         </ul>
         <div id="img-cont">
-          <!-- <img src="images/urlshortener" alt=""> -->
+
         </div>
       </div>
     </div>
