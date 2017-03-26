@@ -21,6 +21,7 @@ html,body {
   background-size: cover;
   background-position: 50% 50%;
 }
+
 .fa-codepen {
   font-size: 1.3em !important
 }
@@ -108,7 +109,8 @@ body > .backstretch {
   font-family: Noto Sans;
   margin-left: 0;
   margin-right: auto;
-  /*width: 80%;*/
+  margin-left: auto;
+  width: 75%;
   margin-bottom: 10px;
   transition: margin-left .5s ease-in-out;
   text-align: center
@@ -349,7 +351,8 @@ footer {
       padding: 40px 0px 15px 20px
     }
     #name {
-      margin-top: 15px !important
+      margin-top: 15px !important;
+      width: 100%;
     }
     #buttons {
       position: absolute;
@@ -360,6 +363,9 @@ footer {
     }
     #projects, #down {
       display: none
+    }
+    #bio {
+      width: 100%
     }
 }
 /*6*/
@@ -448,6 +454,9 @@ footer {
     #name {
       margin-top: 15px !important
     }
+    #bradley {
+      font-size: 1.5em;
+    }
     #buttons {
       top: 15%;
       font-size: 2em
@@ -458,8 +467,14 @@ footer {
     #about-link > a {
       border: none
     }
+    #bio {
+      width: 90%
+    }
     .active {
       border-bottom: 5px solid #42a5f5 !important
+    }
+    .particles-js-canvas-el {
+      position: fixed;
     }
 }
 /*ipad pro*/
