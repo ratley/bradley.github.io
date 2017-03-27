@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.skills').css('color', '#bbdefb')
     $(this).css('color', '#42a5f5')
     $('#bio').show()
-    $('#name').css('margin-left', '0')
+    // $('#name').css('margin-left', '0')
     $('#bio').css('opacity', '1')
     $('#about-header-cont').css('text-align', 'inherit')
     $('#skill-pics').hide()
