@@ -69,6 +69,7 @@ body > .backstretch {
 	transform: translate(0px, 40px);
 	padding: 6px 15px 6px 15px;
 	transition: 450ms ease;
+	font-family: 'Avenir', 'Muli';
 }
 #contact-button:hover:after {
 	transform: translate(0px, 0px);
