@@ -50,6 +50,7 @@ body > .backstretch {
   border-top-right-radius: 20px;*/
 	transition: 450ms ease;
 	overflow: hidden;
+	font-family: 'Avenir', 'Muli';
 }
 #contact-button:hover {
 	color: white;
