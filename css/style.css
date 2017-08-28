@@ -1,5 +1,7 @@
-/*change background color back*/
-html, body {
+/*if you're reading this i know it's a mess 👽💩🙈*/
+
+html,
+body {
 	/*background-color: #F6F9FC;*/
 	/*background-color: white;*/
 	/*font-size: 1.4em;*/
@@ -24,11 +26,6 @@ html, body {
 }
 .fa-codepen {
 	font-size: 1.3em !important;
-}
-body > .backstretch {
-	z-index: 0 !important;
-	opacity: 0.1;
-	transition: opacity 5s ease;
 }
 .button-info {
 	padding-bottom: 0 !important;
@@ -74,76 +71,13 @@ body > .backstretch {
 #contact-button:hover:after {
 	transform: translate(0px, 0px);
 }
-#contact-button:focus {
-	outline: none;
-}
-/*#contact-button:focus:after {
-  outline: none
-}*/
-/*#contact-button:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  font-size: 1.35em;
-  z-index: -1;
-  background-color: #90caf9;
-  width: 0;
-  height: 100%;
-  border: 0px;
-  -webkit-transition: ease .3s;
-}
-#contact-button:hover:after {
-  width: 100%;
-  background-color: #42a5f5;
-  border-color: #42a5f5;
-}*/
-#nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 65px;
-	z-index: 1000;
-}
-#nav li {
-	display: inline;
-	list-style: none;
-	float: left;
-	padding: 40px 0px 15px 40px;
-	color: #eeeeee;
-	font-family: Lora;
-}
-#nav li a {
-	color: #616161;
-	transition: color .5s ease;
-	padding-bottom: 5px;
-	text-decoration: none !important;
-}
-#aboutBorderBottom {
-	border-bottom: 2px solid #42a5f5;
-	position: absolute;
-	bottom: 0;
-	width: 38px;
-	transition: width .5s ease;
-}
-#projectsBorderBottom {
-	border-bottom: 2px solid #42a5f5;
-	position: absolute;
-	bottom: 0;
-	width: 0px;
-	transition: width .5s ease;
-}
 .active {
-	/*text-decoration: underline;*/
-	/*border-bottom: 3px solid white;*/
-	color: #42a5f5 !important;
-}
-#nav li a:hover {
-	text-decoration: none;
 	color: #42a5f5;
+	transition: opacity .345s ease;
+	transition-delay: .345s;
 }
-#nav li a:active {
-	text-decoration: none;
+.inactive {
+	color: #9fcef5;
 }
 .contact {
 	font-family: Lora, monospace;
@@ -156,6 +90,7 @@ body > .backstretch {
 	position: absolute;
 	width: 100%;
 	align-self: center;
+	top: 22%;
 }
 #name {
 	color: white;
@@ -172,25 +107,34 @@ body > .backstretch {
 	/*border-bottom: 2px solid #bdbdbd;*/
 	transition: color .5s ease;
 }
-#bradley {
+.header {
+	color: #9fcef5;
+	transition: color .5s ease;
+}
+.bradley:after {
+	content: '/';
+	color: #6b7c93;
+	padding: 0 10px;
+}
+.header.active {
 	color: #42a5f5;
 }
-#bradley:hover {
+.header:hover {
 	cursor: pointer;
 	color: #42a5f5 !important;
-}
-#learning {
-	color: #42a5f5;
 }
 #bio {
 	line-height: 1.2;
 	border-left: 10px solid #42a5f5;
 	padding-left: 10px;
-	width: 75%;
+	width: 100%;
+	max-width: 75%;
+	position: absolute;
 	margin: 0;
 	font-size: 2.8em;
-	color: #6B7C93;
-	transition: opacity 345ms ease-out;
+	color: #6b7c93;
+	opacity: 1;
+	/*transition: opacity 345ms ease-out;*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5vh;
@@ -214,8 +158,41 @@ body > .backstretch {
 #bio span a:hover {
 	color: #1976d2;
 }
-#skills .container h1 {
-	color: #42a5f5;
+#portfolio {
+	width: 100%;
+	max-width: 75%;
+	position: absolute;
+	opacity: 0;
+	/*transition: opacity .345s ease-out;*/
+}
+.portfolio-header {
+	font-family: Avenir, Muli;
+	margin-top: 0;
+	color: #6b7c93;
+	border-bottom: 3px solid #6b7c93;
+}
+#portfolio img {
+	padding: 10px 0 0;
+	width: 20%;
+}
+.job {
+	display: flex;
+	flex-direction: column;
+}
+.job .projects {
+	padding-top: 10px;
+	font-weight: bold;
+}
+.transdelay {
+	transition: opacity .345s ease-out;
+	transition-delay: .345s;
+}
+.notransdelay {
+	transition: opacity .345s ease-out;
+}
+.wrapper {
+	width: 75%;
+	margin: auto;
 }
 #buttons {
 	position: absolute;
@@ -224,132 +201,11 @@ body > .backstretch {
 	right: 1%;
 	bottom: 25%;
 }
-#desc {
-	margin: 0;
-}
-#down {
-	position: absolute;
-	bottom: 24%;
-	left: 48vw;
-	font-size: 5.3vw;
-	color: #42a5f5;
-}
-#down:hover {
-	cursor: pointer;
-}
 #about {
 	position: relative;
 	/*top: 10%;*/
 	height: 90vh;
 }
-#get-in-touch {
-	margin-top: 140px;
-	color: white;
-	font-size: .7em;
-	font-family: Lora;
-}
-#projects {
-	position: absolute;
-	background-color: #F6F9FC;
-	height: 100vh;
-	width: 100%;
-	font-size: 2vh;
-	/*box-shadow: -1px 8px 20px 7px rgba(50,50,93,.1)*/
-	/*border-top: 5px solid #42a5f5;*/
-}
-#divider {
-	color: #6B7C93 !important;
-}
-.skills {
-	color: #bbdefb;
-	transition: color .2s ease;
-}
-.skills:hover {
-	color: #42a5f5 !important;
-	cursor: pointer;
-}
-#skills {
-	font-family: Noto Sans;
-	position: relative;
-	height: 75vh;
-	width: 100%;
-	background-color: #e3f2fd;
-}
-#skill-pics {
-	text-align: center;
-	display: none;
-	opacity: 0;
-	transition: opacity .5s ease;
-}
-#skill-pics img {
-	transition: transform .5s ease;
-}
-#skill-pics img:hover {
-	transform: scale(1.03);
-}
-#jquery, #rails {
-	width: 150px;
-}
-#html {
-	width: 400px;
-}
-#projects-list {
-	font-size: .5em;
-	list-style: none;
-}
-#projects-list li {
-	font-family: Noto Sans;
-	float: left;
-}
-#projects-list li h1 {
-	font-size: 1.4em;
-}
-#projects-container {
-	color: black;
-	font-size: 3em;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 40px;
-	position: relative;
-	top: 10%;
-}
-#projects-container h2, #projects-container p {
-	margin-bottom: 0;
-	padding: 0;
-}
-#plist-cont {
-	width: 100%;
-	height: 500px;
-	border-bottom-left-radius: 15px;
-	/*border-right: 10px solid white;*/
-}
-#plist {
-	border-bottom-left-radius: 15px;
-	width: 20%;
-	height: 100%;
-	font-size: .4em;
-	list-style: none;
-	float: left;
-	padding: 0;
-}
-#plist li {
-	padding: 10px 0px 10px 0px;
-	text-align: left;
-	color: black;
-}
-#plist li:hover {
-	cursor: pointer;
-}
-#plist a {
-	color: #42a5f5;
-}
-#img-cont {
-	margin-left: 15%;
-	height: 100%;
-	float: right;
-}
-/*why*/
 footer {
 	position: fixed;
 	bottom: 0;
@@ -358,9 +214,6 @@ footer {
 	background-color: white;
 	box-shadow: -1px 0px 30px 7px rgba(50, 50, 93, .1);
 	/*border-top: 2px solid #e3f2fd;*/
-}
-.button {
-	width: 40px !important;
 }
 .fa {
 	transition: color .3s ease-out;
@@ -375,13 +228,6 @@ footer {
 .button-info:hover {
 	cursor: pointer;
 	color: #42a5f5;
-}
-.outer {
-	width: 300px;
-	margin: auto;
-}
-.hidden {
-	display: hidden;
 }
 .no-text-dec {
 	text-decoration: none !important;
@@ -398,37 +244,30 @@ footer {
 }
 /*5*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+		/*width: 100%;*/
+		top: 15%;
+	}
+
 	#about {
 		top: 1%;
 		height: 90vh;
 	}
-	#nav-container {
-		display: none;
-	}
-	#nav {
-		padding-left: 26px;
-	}
-	#nav li {
-		padding: 40px 0px 15px 20px;
-	}
 	#name {
 		margin-top: 15px !important;
 		width: 100%;
-		font-size: 2em;
+		font-size: 1.6em;
 	}
-	#buttons {
-		position: absolute;
-		top: 20%;
-		left: 5%;
-		right: 5%;
-		bottom: 5%;
-	}
-	#projects, #down {
-		display: none;
+	.wrapper {
+		width: 100%;
 	}
 	#bio {
-		width: 100%;
+		/*width: 100%;*/
+		max-width: 90%;
 		font-size: 1.6em;
+	}
+	#portfolio {
+		max-width: 90%;
 	}
 	#contact-button {
 		font-size: .9em;
@@ -454,7 +293,7 @@ footer {
 		top: 24%;
 	}
 	#bio {
-		font-size: 2.25em;
+		font-size: 2em;
 	}
 	#contact-button {
 		margin-top: 5%;
@@ -514,32 +353,30 @@ footer {
 	#about {
 		top: 12%;
 	}
-	#nav {
-		padding-left: 35px;
-		font-size: 1.7em;
-	}
-	#nav li {
-		padding: 40px 0px 15px 20px;
-	}
+
 	#name {
 		margin-top: 15px !important;
 		width: 90%;
+		font-size: 3.2em;
 	}
 	#bradley {
 		font-size: 1.5em;
 	}
-	#buttons {
-		top: 15%;
-		font-size: 1.8em;
+	.container {
+		top: 20%;
 	}
-	#aboutBorderBottom, #projectsBorderBottom {
-		display: none;
+	.work-cont {
+		font-size: 1.2em;
 	}
-	#about-link > a {
-		border: none;
+	#portfolio img {
+		width: 25%;
+	}
+	.wrapper {
+		width: 90%;
 	}
 	#bio {
 		width: 90%;
+		max-width: 90%;
 		font-size: 3.35em;
 	}
 	#contact-button {
@@ -553,31 +390,16 @@ footer {
 	footer {
 		height: 85px;
 	}
-	.active {
-		border-bottom: 5px solid #42a5f5 !important;
-	}
-	.particles-js-canvas-el {
-		position: fixed;
-	}
 }
 /*ipad pro*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
 	#about {
 		top: 12%;
 	}
-	#nav {
-		padding-left: 35px;
-		font-size: 1.7em;
-	}
-	#nav li {
-		padding: 40px 0px 15px 20px;
-	}
-	#aboutBorderBottom {
-		display: none;
-	}
 	#name {
 		margin-top: 15px !important;
 		width: 90%;
+		font-size: 4em;
 	}
 	#buttons {
 		top: 12%;

@@ -1,105 +1,50 @@
-// $.backstretch("images/bg1.jpg") {fade: normal}
+$(document).ready(() => {
+	const bioButton = $('.bradley');
+	const portfolioButton = $('.portfolio');
+	const bio = $('#bio');
+	const portfolio = $('#portfolio');
 
-$(document).ready(function() {
+	console.log(bio);
 
-  $('#bradley').on('click', function() {
-    $('.skills').css('color', '#bbdefb')
-    $(this).css('color', '#42a5f5')
-    $('#bio').show()
-    // $('#name').css('margin-left', '0')
-    $('#bio').css('opacity', '1')
-    $('#about-header-cont').css('text-align', 'inherit')
-    $('#skill-pics').hide()
-    $('#skill-pics').css('opacity', '0')
-  })
+	function showPortfolio() {
+		bio.css('opacity', '0');
+		portfolio.css('opacity', '1');
+		bioButton.removeClass('active');
+		bioButton.addClass('inactive');
 
-  $('.skills').on('click', function() {
-    $('#bradley').css('color', '#bbdefb')
-    $(this).css('color', '#42a5f5')
-    $('#bio').css('opacity', '0')
-    $('#bio').hide()
-    // $('#name').css('margin-left', '31.5%')
-    $('#skill-pics').show()
-    $('#skill-pics').css('opacity', '1');
+		portfolioButton.addClass('active');
+		portfolioButton.removeClass('inactive');
+		window.setTimeout(() => {
+			portfolio.removeClass('transdelay');
+			portfolio.addClass('notransdelay');
 
-  })
+			bio.removeClass('notransdelay');
+			bio.addClass('transdelay');
+		}, 345);
+	}
 
-  // $('#projects').backstretch("images/bg1-flipped.jpg")
-  $('.backstretch').css('opacity', '1')
+	function showBio() {
+		bio.css('opacity', '1');
+		portfolio.css('opacity', '0');
+		bioButton.removeClass('inactive');
+		bioButton.addClass('active');
 
-//   $(window).scroll(function (event) {
-//     var scroll = $(window).scrollTop();
-//     console.log(scroll)
-// });
-  $('#about-link a').on('click', function() {
-    // $('#projects-link a').removeClass('active')
-    // $('#projectsBorderBottom').css('width', '0px')
-    // $('#about-link a').addClass('active')
-    // $('#aboutBorderBottom').css('width', '38px')
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top - 80
-    }, 1000);
-  })
+		portfolioButton.addClass('inactive');
+		portfolioButton.removeClass('active');
 
-  $('#projects-link a, #down').on('click', function(e) {
-    // e.preventDefault()
-    // $('#about-link a').removeClass('active')
-    // $('#aboutBorderBottom').css('width', '0px')
-    // $('#projects-link a').addClass('active')
-    // $('#projectsBorderBottom').css('width', '53px')
-    $('html, body').animate({
-      scrollTop: $("#projects").offset().top
-    }, 1000);
-  })
-{/* <a href="http://github.com/ratley" target="_blank">github</a> */}
-  // $('#projects-link').hover(function() {
-  //   $(this).html('under construction')
-  //   $(this).css('transition', 'color .5s ease')
-  //   $(this).css('color', 'gold')
-  // })
-  // $(this).css('color', 'gold')
-  // $(document).on('hover','#projects-link a', function() {
-  // })
-  // $('#projects-link').on('mouseleave', function() {
-  //   $(this).text('projects')
-  //   $(this).css('color', '#616161')
-  // })
+		window.setTimeout(() => {
+			portfolio.removeClass('notransdelay');
+			portfolio.addClass('transdelay');
 
+			bio.removeClass('transdelay');
+			bio.addClass('notransdelay');
+		}, 345);
+	}
+	portfolioButton.on('click', () => {
+		showPortfolio();
+	});
 
-  checkLocation()
-
-})
-
-function isIndex() {
-  return !window.location.href.includes('about') && !window.location.href.includes('projects')
-}
-
-function checkLocation() {
-  if ((window.location.href.indexOf("#about") > -1 || isIndex()) || $(document).scrollTop() < 600) {
-    $('#projects-link a').removeClass('active')
-    $('#projectsBorderBottom').css('width', '0px')
-    $('#about-link a').addClass('active')
-    $('#aboutBorderBottom').css('width', '38px')
-  } else if(window.location.href.indexOf("#projects") > -1 && $(document).scrollTop() > 600) {
-    $('#about-link a').removeClass('active')
-    $('#aboutBorderBottom').css('width', '0px')
-    $('#projects-link a').addClass('active')
-    $('#projectsBorderBottom').css('width', '53px')
-  }
-}
-function checkScrollPosition() {
-  if($(document).scrollTop() == 0) {
-    $('#projects-link a').removeClass('active')
-    $('#projectsBorderBottom').css('width', '0px')
-    $('#about-link a').addClass('active')
-    $('#aboutBorderBottom').css('width', '38px')
-  } else if($(document).scrollTop() > 750) {
-    $('#about-link a').removeClass('active')
-    $('#aboutBorderBottom').css('width', '0px')
-    $('#projects-link a').addClass('active')
-    $('#projectsBorderBottom').css('width', '53px')
-  }
-}
-window.setInterval(checkLocation, 100)
-
-window.setInterval(checkScrollPosition, 100)
+	bioButton.on('click', () => {
+		showBio();
+	});
+});
