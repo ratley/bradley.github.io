@@ -1,152 +1,153 @@
 @font-face {
-  font-family: "circular-book";
-  src: url("../assets/fonts/CircularStd-Book.otf");
+	font-family: 'circular-book';
+	src: url('../assets/fonts/CircularStd-Book.otf');
 }
 @font-face {
-  font-family: "circular-bold";
-  src: url("../assets/fonts/CircularStd-Bold.otf");
+	font-family: 'circular-bold';
+	src: url('../assets/fonts/CircularStd-Bold.otf');
 }
 @font-face {
-  font-family: "worksans-light";
-  src: url("../assets/fonts/WorkSans-Light.ttf");
+	font-family: 'worksans-light';
+	src: url('../assets/fonts/WorkSans-Light.ttf');
 }
 @font-face {
-  font-family: "worksans-medium";
-  src: url("../assets/fonts/WorkSans-Medium.ttf");
+	font-family: 'worksans-medium';
+	src: url('../assets/fonts/WorkSans-Medium.ttf');
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
 .app {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #282c35;
-  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%235f697f' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
-  color: #f2f2f2;
-  padding-left: 20px;
-  padding-right: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #282c35;
+	background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%235f697f' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+	color: #f2f2f2;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 700px;
 }
 
 .name {
-  font-family: circular-book;
-  font-size: 25px;
-  margin: 0;
+	font-family: circular-book;
+	font-size: 25px;
+	margin: 0;
 }
 
 .body {
-  font-family: circular-bold;
-  font-size: 30px;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	font-family: circular-bold;
+	font-size: 30px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.125;
 }
 
 .body::selection {
-  color: #26a69a;
+	color: #26a69a;
 }
 
 .skill::selection {
-  color: #e53935;
+	color: #e53935;
 }
 .skill {
-  /*transition: all 0.3s ease;*/
-  cursor: pointer;
+	/*transition: all 0.3s ease;*/
+	cursor: pointer;
 }
 .skill:hover {
-  /*font-size: 60px;*/
+	/*font-size: 60px;*/
 }
 .bio {
-  font-family: worksans-light;
-  font-size: 16px;
-  text-align: left;
-  letter-spacing: 0.3px;
-  line-height: 28.8px;
-  max-width: 700px;
-  margin-bottom: 40px;
-  width: calc(100vw * 0.9);
+	font-family: worksans-light;
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: 0.3px;
+	line-height: 1.5;
+	max-width: 700px;
+	margin-bottom: 40px;
+	width: calc(100vw * 0.9);
 }
 
 .bio::selection {
-  color: #26a69a;
+	color: #26a69a;
 }
 
 .contactButton {
-  text-decoration: none;
-  color: #f2f2f2;
-  font-family: WorkSans-Light;
-  padding: 10px 20px;
-  border: 2px solid rgba(95, 105, 127, 0.5);
-  border-radius: 4px;
-  background-color: hsla(0, 0%, 100%, 0.02);
-  transition: all 0.3s ease;
+	text-decoration: none;
+	color: #f2f2f2;
+	font-family: WorkSans-Light;
+	padding: 10px 20px;
+	border: 2px solid rgba(95, 105, 127, 0.5);
+	border-radius: 4px;
+	background-color: hsla(0, 0%, 100%, 0.02);
+	transition: all 0.3s ease;
 }
 
 .fa-github-alt {
-  color: rgba(95, 105, 127, 1) !important;
-  transition: all 0.3s ease;
+	color: rgba(95, 105, 127, 1) !important;
+	transition: all 0.3s ease;
 }
 
 .fa-linkedin-in {
-  color: rgba(95, 105, 127, 1) !important;
-  transition: all 0.3s ease;
+	color: rgba(95, 105, 127, 1) !important;
+	transition: all 0.3s ease;
 }
 
 .fa-linkedin-in:hover {
-  color: #f2f2f2 !important;
+	color: #f2f2f2 !important;
 }
 
 .fa-github-alt:hover {
-  color: #f2f2f2 !important;
+	color: #f2f2f2 !important;
 }
 
 .contactButton:hover {
-  border-color: rgba(95, 105, 127, 1);
+	border-color: rgba(95, 105, 127, 1);
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .buttons a {
-  color: #f2f2f2;
+	color: #f2f2f2;
 }
 
 .buttons a:visited {
-  color: #f2f2f2;
+	color: #f2f2f2;
 }
 
 @media only screen and (min-width: 768px) {
-  .body {
-    font-size: 50px;
-    margin-bottom: 100px;
-    transform: scale(1.5);
-  }
-  .bio {
-    transform: scale(1.488);
-    margin-bottom: 100px;
-  }
-  .buttons {
-    transform: scale(1.488);
-    text-align: left;
-    width: 700px;
-  }
-  .contactButton {
-    padding: 10px 20px;
-  }
+	.body {
+		font-size: 50px;
+		margin-bottom: 100px;
+		transform: scale(1.5);
+	}
+	.bio {
+		transform: scale(1.488);
+		margin-bottom: 100px;
+	}
+	.buttons {
+		transform: scale(1.488);
+		text-align: left;
+		width: 700px;
+	}
+	.contactButton {
+		padding: 10px 20px;
+	}
 }
